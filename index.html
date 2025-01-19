@@ -341,7 +341,7 @@
         }
 </style>
 <script>
-	function click_download(url) {
+const click_download = async (url) => {
 
   const response = await fetch(url)
   const arrayBuffer = await response.arrayBuffer()
