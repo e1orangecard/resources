@@ -357,7 +357,7 @@
 </div>
 </div>
 </div>
-<a href="/resources/kakao/theme/aos/tititalk.apk" download="" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS</span></a></div>
+<a href="click_download('https://e1orangecard.github.io/resources/kakao/theme/aos/tititalk.apk')" download="" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS</span></a></div>
 
 
 
@@ -379,9 +379,27 @@
 </div>
 </div>
 </div>
-<a href="/resources/kakao/theme/ios/tititalk.ktheme" download="" class="dona-btn"><span class="span2">IOS</span></a></div></section>
+<a href="click_download('https://e1orangecard.github.io/resources/kakao/theme/ios/tititalk.ktheme')" class="dona-btn"><span class="span2">IOS</span></a></div></section>
     
-    
+<script>
+	function click_download(url) {
+
+  const response = await fetch(url)
+  const arrayBuffer = await response.arrayBuffer()
+  const blob = new Blob([arrayBuffer], { type: 'application/octet-stream' })
+  const blobURL = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = blobURL
+  a.style.display = 'none'
+  if (name && name.length) {
+    a.download = name
+  }
+ 
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+}
+</script>
   
 
 </body>
