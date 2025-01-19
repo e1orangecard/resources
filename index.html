@@ -1,8 +1,386 @@
 <html>  
   <head></head>
-  <body>
+<body><style type="text/css">a {text-decoration:none}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+    .EventInner {
+        max-width: 11800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .EventImg {
+        position: relative;
+    }
+    .EventBG {
+        position: relative;
+        padding: 35px 0;
+        width: auto;
+        background-image: url(/Upload/EV/906/);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .event_txt {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    section {
+        color: #fff;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        padding: 45px 0;
+        text-align: center;
+    }
+    .section_date {
+        background-color: #00649b;
+    }
+    .section_date ul {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .section_check {
+        background-color: #d2e1e8;
+    }
+    .section_check h1 {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    .section_check .summary {
+        background-color: #fff;
+        padding: 30px;
+        width: 50%;
+        border-radius: 6px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .e1-logo {
+        vertical-align: baseline;
+    }
+    .titi {
+        top: -33%;
+        right: -6%;
+        width: 90px;
+        position: absolute;
+    }
+    .section_check .summary p {
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+        color: #1e1e1e !important;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        line-height: 1.2;
+        font-size: 21px;
+    }
+    .section_how1 {
+        background-color: #feeecd;
+        background-image: url(/Upload/EV/906/906-event-bg.png);
+    }
+    .section_how1 h1 {
+        display: inline-block;
+        width: 30%;
+        max-width: 180px;
+        margin-bottom: 40px;
+    }
+    .section_how2 {
+        background-color: #ffbf20;
+        padding-bottom: 0;
+    }
+    .section_how2 h1 {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    .section_how2 h2 {
+        display: inline-block;
+        width: 30%;
+        max-width: 300px;
+        margin: 40px 0;
+    }
+    .b {
+        position: relative;
+        letter-spacing: -0.02em;
+        display: inline;
+        flex-shrink: 0;
+    }
+    .wrapper {
+        text-align: center;
+        padding: 20px 30px;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        font-size: 22px;
+        align-self: stretch;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #1e1e1e !important;
+    }
+    .howto1-line {
+        width: 85%;
+        position: relative;
+        border-top: 1px dashed #ccc;
+        box-sizing: border-box;
+        height: 1px;
+    }
+    .sub-txt {
+        display: inline;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -1px;
+        line-height: 1.2;
+    }
+    .p {
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        position: relative;
+        font-weight: 800;
+        line-height: 1;
+    }
+    .b1 {
+        align-self: stretch;
+        position: relative;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1.5px solid #686868;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .div {
+        position: relative;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        text-align: left;
+    }
+    .icon-parent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        text-align: center;
+        font-size: 15px;
+        color: #686868;
+    }
+    .p-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        gap: 5px;
+        text-align: center;
+    }
+    .dona-btn {
+        width: 100%;
+        border-radius: 0px 0px 6px 6px;
+        background-color: #ff7517;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+        box-sizing: border-box;
+    }
+    .dona-btn span:nth-child(2n) {
+        color: #fff2bb;
+        font-weight: 800;
+        font-size: 20px;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+    .dona-btn span:last-child {
+        color: #fff;
+        font-weight: 800;
+        font-size: 20px;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+    .frame-parent {
+        margin-top: -1px;
+        align-self: stretch;
+        border-radius: 6px 6px 0 0;
+        background-color: #fff;
+        padding: 20px 40px;
+    }
+    .howto1 {
+        margin: 0 auto;
+        width: 55%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font-size: 28px;
+        color: #000;
+        font-family: Pretendard;
+    }
+    .rankboard {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-image: url(/Upload/EV/906/906-rankboard-bg.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 70%;
+        margin-bottom: 30px;
+        padding-bottom: 55px;
+    
+    }
+    .rankboard .grid {
+        background-color: #fff;
+        border-radius: 6px;
+        width: 75%;
+		height: 355px;
+        display: grid;
+        grid-template-rows: 30px 1fr 1fr 1fr;
+    }
+    .row-item {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .row-item p {
+        font-family: 'Pretendard';
+        font-weight: bold;
+        font-size: 27px;
+        color: #1e1e1e !important;
+    }
+    .rank-bar {
+        background-color: #fe6030;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 6px 6px 0px 0px;
+    }
+    .rank-bar .ellipse {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ffffff50;
+    }
+    .rank-1 {
+        width: 50px;
+        margin-right: 25px;
+    }
+
+    .my-dona {
+        background-color: #00649b;
+        width: 50%;
+        border-radius: 100px;
+        padding: 30px 25px;
+        margin: 0 auto;
+    }
+    .my-dona .dona-wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+    .dona-item {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: baseline;
+    }
+    .dona-item img {
+        width: 12px !important;
+        vertical-align: baseline;
+    }
+    .my-dona p {
+        color: #fff;
+        font-family: Pretendard;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .my-dona p var {
+        color: #fff;
+        font-family: Pretendard;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .arrow {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .arrow img {
+        width: 25px !important;
+    }
+
+    /*유의사항*/
+        .notice {
+            background: #efefef;
+            padding: 60px 50px 50px 50px;
+            text-align: left;
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        .notice dl dt {
+			font-weight: bold;
+			font-size: 25px;
+			margin-bottom: 15px;
+            color: #3a3a3a
+		}
+        .notice li {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            font-size: 20px;   
+            margin-bottom: 5px;
+            text-indent: -21px;
+            margin-left: 25px;
+            line-height: 1.3;
+            color: #3a3a3a;
+        }
+</style>
     <h1></h1>
-    <a href="/resources/kakao/theme/aos/tititalk.apk" download>AOS</a>
-    <a href="/resources/kakao/theme/ios/tititalk.ktheme" download>IOS</a>
-  </body>
+<section class="section_how2">
+<h1>카카오톡 테마 다운로드</h1>
+
+<div class="howto1">
+<div class="wrapper"><b class="b">안드로이드</b></div>
+
+<div class="howto1-line">&nbsp;</div>
+
+<div class="frame-parent">
+<div class="p-parent">
+<div class="p">
+<p class="sub-txt" style="color: #1e1e1e;">이렇게~ 저렇게<br>
+이벤트 기간 동안 1등부터 3등까지  <strong style="color: #fe6030;">카카오톡으로 파일 공유하기</strong></p>
+</div>
+</div>
+</div>
+<a href="/resources/kakao/theme/aos/tititalk.apk" download="" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS</span></a></div>
+
+
+
+
+
+
+
+
+<div class="howto1">
+<div class="wrapper"><b class="b">아이폰</b></div>
+
+<div class="howto1-line">&nbsp;</div>
+
+<div class="frame-parent">
+<div class="p-parent">
+<div class="p">
+<p class="sub-txt" style="color: #1e1e1e;">이렇게~ 저렇게<br>
+이벤트 기간 동안 1등부터 3등까지  <strong style="color: #fe6030;">카카오톡으로 파일 공유하기</strong></p>
+</div>
+</div>
+</div>
+<a href="/resources/kakao/theme/ios/tititalk.ktheme" download="" class="dona-btn"><span class="span2">IOS</span></a></div></section>
+    
+    
+  
+
+</body>
 </html>
