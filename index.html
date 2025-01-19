@@ -341,7 +341,7 @@
         }
 </style>
 <script>
-const click_download = async (url) => {
+const click_download = async (url, name) => {
 
   const response = await fetch(url)
   const arrayBuffer = await response.arrayBuffer()
@@ -375,7 +375,7 @@ const click_download = async (url) => {
 </div>
 </div>
 </div>
-<a href="javascript:click_download('https://e1orangecard.github.io/resources/kakao/theme/aos/tititalk.apk')" download="" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS</span></a></div>
+<a href="javascript:click_download('https://e1orangecard.github.io/resources/kakao/theme/aos/tititalk.apk', 'tititalk.apk')" download="" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS</span></a></div>
 
 
 
@@ -397,7 +397,7 @@ const click_download = async (url) => {
 </div>
 </div>
 </div>
-<a href="javascript:click_download('https://e1orangecard.github.io/resources/kakao/theme/ios/tititalk.ktheme')" class="dona-btn"><span class="span2">IOS</span></a></div></section>
+<a href="javascript:click_download('https://e1orangecard.github.io/resources/kakao/theme/ios/tititalk.ktheme','tititalk.ktheme')" class="dona-btn"><span class="span2">IOS</span></a></div></section>
     
   
 
