@@ -105,7 +105,7 @@
 </div>
 	<!-- <a href="javascript:click_download('https://e1orangecard.github.io/resources/kakao/theme/aos/tititalk.apk', 'tititalk.apk')" download="" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS CLICK</span> -->
 	<!-- </a> -->
-	<a href="https://e1orangecard.github.io/resources/kakao/theme/aos/tititalk.apk" download title="tititalk.apk" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS DOWNLOAD</span>
+	<a href="https://e1orangecard.github.io/resources/kakao/theme/aos/tititalk.apk" download title="" data-name="tititalk.apk" data-os="aos" class="dona-btn" style="margin-bottom:30px"><span class="span2">AOS DOWNLOAD</span>
 	</a>
 </div>
 
@@ -126,7 +126,7 @@
 		<!-- <a href="javascript:click_download('https://e1orangecard.github.io/resources/kakao/theme/ios/tititalk.ktheme','tititalk.ktheme')" class="dona-btn"> -->
 			<!-- <span class="span2">IOS CLICK</span> -->
 		<!-- </a> -->
-		<a href="https://e1orangecard.github.io/resources/kakao/theme/ios/tititalk.ktheme" download title="tititalk.ktheme" class="dona-btn">
+		<a href="https://e1orangecard.github.io/resources/kakao/theme/ios/tititalk.ktheme" download title="" data-name="tititalk.ktheme" data-os="ios" class="dona-btn">
 			<span class="span2">IOS DOWNLOAD</span>
 		</a>
 	</div>
@@ -154,10 +154,29 @@ $(document).ready(function(){
 	if (navigator.userAgent.indexOf('KAKAOTALK') == -1) {
 		$('a').on('click', function(){
 			var url = $(this).attr('href');
-			var name = $(this).attr('title');
+			var name = $(this).attr('data-name');
 			click_download(url, name);
 			return false;
 		});
+	} else {
+		var os = $(this).attr('data-os');
+		if (os == "aos") {
+			if (navigator.userAgent.match(/Android/i)) {
+			
+			} else {
+				alert('안드로이드에서 다운로드 가능합니다.');
+				return false;
+			}
+		} 
+		
+		if (os == "ios") {
+			if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+			
+			} else {
+				alert('아이폰에서 다운로드 가능합니다.');
+				return false;
+			}
+		}
 	}
 });
 </script>
